@@ -9,7 +9,7 @@
 
 
     <RelativeLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -97,13 +97,103 @@
             android:text="@string/label_submit"
             android:layout_gravity="bottom"
             android:onClick="sendMessage"
+            android:padding="30px"
+            android:textColor="#FFF"
+            android:background="#ff000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignLeft="@+id/edit_message3"
+            android:layout_alignStart="@+id/edit_message3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250px"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:textSize="40px"
+            android:layout_gravity="center_vertical"
             android:layout_below="@+id/label_dislike"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:padding="30px"
-            android:layout_marginTop="30px"
-            android:textColor="#FFF"
-            android:background="#ff000000" />
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/seekBar"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_above="@+id/textView2"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_alignEnd="@+id/seekBar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="250px"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Comment"
+            android:textSize="40px"
+            android:layout_gravity="center_vertical"
+            android:layout_alignBaseline="@+id/button_submit"
+            android:layout_alignBottom="@+id/button_submit"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/edit_message2"
+            android:layout_marginLeft="155dp"
+            android:layout_marginStart="155dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Switch"
+            android:id="@+id/switch1"
+            android:layout_alignBottom="@+id/edit_message2"
+            android:layout_alignLeft="@+id/ratingBar"
+            android:layout_alignStart="@+id/ratingBar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox"
+            android:layout_alignBottom="@+id/edit_message3"
+            android:layout_alignLeft="@+id/switch1"
+            android:layout_alignStart="@+id/switch1" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
 
     </RelativeLayout>
